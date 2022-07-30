@@ -1,14 +1,13 @@
 import * as firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA38Z2-fiYBUal9xgx1cH0xmEV46bxAZEU",
-    authDomain: "fyp-project-3b8d2.firebaseapp.com",
-    databaseURL: "https://fyp-project-3b8d2-default-rtdb.firebaseio.com",
-    projectId: "fyp-project-3b8d2",
-    storageBucket: "fyp-project-3b8d2.appspot.com",
-    messagingSenderId: "331535948268",
-    appId: "1:331535948268:web:44d18d0736421f869608c9",
-    measurementId: "G-H8JH8DDPNP",
+    apiKey: "AIzaSyCKbsazH8T5vMuuHH8khTAvrGQxCJudqeA",
+    authDomain: "crop-irrigation-system.firebaseapp.com",
+    projectId: "crop-irrigation-system",
+    storageBucket: "crop-irrigation-system.appspot.com",
+    messagingSenderId: "14173826254",
+    appId: "1:14173826254:web:6f08af7dd2732e9072349f",
+    measurementId: "G-RMSLMPZ3R9"
 };
 
 if (!firebase.apps.length) {

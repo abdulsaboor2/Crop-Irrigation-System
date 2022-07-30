@@ -14,16 +14,16 @@ const AppScreen = ({navigation}) => {
     useEffect(()=>{
         const getToken = async() => {
             setIsLoading(true);
-                await AsyncStorage.getItem('token').then(user => {
-                firebase.firestore().collection("Customers").doc(user).get().then((doc)=>{
-                    if (doc.exists) {
-                        navigation.replace('Main');
-                        setIsLoading(false);
-                    }
-                    else{
-                        navigation.replace('Admin');
-                        setIsLoading(false);
-                    }
+            await AsyncStorage.getItem('token').then(user => {
+            firebase.firestore().collection("Customers").doc(user).get().then((doc)=>{
+                if (doc.exists) {
+                    navigation.replace('Main');
+                    setIsLoading(false);
+                }
+                else{
+                    navigation.replace('Admin');
+                    setIsLoading(false);
+                }
             }).catch(()=>{
                 errorMessage("Internet Error");
                 setIsLoading(false);

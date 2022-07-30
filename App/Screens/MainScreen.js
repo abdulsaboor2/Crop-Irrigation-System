@@ -9,18 +9,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const MainScreen = ({navigation}) => {
 
-    const [useToken, setUseToken] = useState("");
     const [score, setScore] = useState("")
     
     useEffect(()=>{
-
-        const getToken = async() => {
-            const tokens = await AsyncStorage.getItem("token");
-            setUseToken(tokens);
-        }
-        getToken();
         handleSensorScore();
     }, []);
+
+    
 
     const handleSensorScore = () => {
         let getScore = 26;

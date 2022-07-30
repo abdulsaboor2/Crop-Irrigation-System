@@ -99,7 +99,6 @@ export default function App() {
             ),}}/>
           <Stack.Screen name="Change Score" component={ChangeScore} />
           <Stack.Screen name="Add User" component={AddUser} />
-          <Stack.Screen name="list" component={UserListItem} />
         </Stack.Group>
       </Stack.Navigator>
     )
@@ -118,7 +117,6 @@ export default function App() {
           <Stack.Screen name="Admin" component={AdminSetting} options={{ headerShown: false }} />
           <Stack.Screen name="Forgot Password" component={ForgotPassword}/>
           <Stack.Screen name="FrontScreen" component={MainScreen} />
-          
         </Stack.Navigator>
         <FlashMessage style={{marginTop:35}} position="top" />
     </NavigationContainer>
