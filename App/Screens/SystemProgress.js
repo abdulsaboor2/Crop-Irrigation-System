@@ -126,7 +126,6 @@ const SystemProgress = (props) => {
                 <Text style={{textAlign:"center", fontSize: 18, fontWeight:"bold", color: color == "red" ? "red" : "#000"}}>{result}</Text>
             </View>
             <View>
-            <Text>{!isLoading && btn ?"true":"false"}</Text>
                 <AppButton title={"Turn ON"} color={"green"} onPress={()=>{setBtn(true)}} />
                 <AppButton title={"Turn OFF"} color={"red"} onPress={()=>{setBtn(false)}} />
             </View>

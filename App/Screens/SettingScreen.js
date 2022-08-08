@@ -41,7 +41,7 @@ function SettingScreen(props) {
                     const data = doc.data();
                     setFullname(data.fullname);
                     setEmail(data.email);
-                    setAdmin(data.admin);
+                    setAdmin(data.role);
                     setIsLoading(false);
                 }
                 else{

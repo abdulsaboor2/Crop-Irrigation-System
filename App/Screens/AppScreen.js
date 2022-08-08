@@ -28,6 +28,9 @@ const AppScreen = ({navigation}) => {
                 errorMessage("Internet Error");
                 setIsLoading(false);
             })
+            setIsLoading(false);
+            }).catch(()=>{
+                setIsLoading(false);
             })
         }
         getToken();
